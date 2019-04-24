@@ -3,11 +3,6 @@
     session_start();
 
 
-    if (!isset($_SESSION['name'])) {
-        header("Location: login.php");
-    }
-
-
     if (isset($_GET['add_to_cart'])) {
        if ($_GET['add_to_cart'] == 46) {
            $_SESSION['pecannuts'] ++;
